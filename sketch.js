@@ -19,12 +19,12 @@ function preload() {
   cloudImage = loadImage("cloud.png");// carregando a Imagem da Nuvem
 
   // carregando as Imagens dos Obstaculos
-  obstacle1 = loadImage("obstacle1.png");
-  obstacle2 = loadImage("obstacle2.png");
-  obstacle3 = loadImage("obstacle3.png");
-  obstacle4 = loadImage("obstacle4.png");
-  obstacle5 = loadImage("obstacle5.png");
-  obstacle6 = loadImage("obstacle6.png");
+  obstacle1 = loadImage("pipe.png");
+  obstacle2 = loadImage("pipe.png");
+  obstacle3 = loadImage("pipe.png");
+  obstacle4 = loadImage("pipe.png");
+  obstacle5 = loadImage("pipe.png");
+  obstacle6 = loadImage("pipe.png");
 
   gameOverImg = loadImage("gameOver.png");// carregando a Animação Gamer Over
   restartImg = loadImage("restart.png");// carregando a Animação   Restart
@@ -36,7 +36,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 200); // criando o canvas
+  createCanvas(600, 300); // criando o canvas
   trex = createSprite(50, 180, 20, 50);// criando o sprite trex
 
 
@@ -209,7 +209,7 @@ function spawnObstacles() {
     }
 
     //atribua dimensão e tempo de vida aos obstáculos           
-    obstacle.scale = 0.5;
+    obstacle.scale = 0.18;
     obstacle.lifetime = 300;
     //adicione cada obstáculo ao grupo
     obstaclesGroup.add(obstacle);
